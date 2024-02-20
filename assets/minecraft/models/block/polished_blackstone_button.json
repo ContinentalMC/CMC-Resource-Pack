@@ -1,5 +1,5 @@
 {
-  "parent": "item/generated",
+  "parent": "block/generated",
   "textures": {
     "layer0": "block/polished_blackstone_button"
   },
