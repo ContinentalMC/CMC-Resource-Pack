@@ -1,6 +1,10 @@
 {
   "parent": "block/button",
   "textures": {
-    "texture": "block/polished_blackstone_button"
-  }
+    "layer0": "block/polished_blackstone_button"
+  },
+  "overrides": [
+    {"predicate": {"custom_model_data":1}, "model": "item/netherite_scrap_fragment"}
+  ]
 }
+
