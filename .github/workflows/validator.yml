@@ -9,5 +9,5 @@ jobs:
       - name: Validate Resource Pack
         uses: MrKinau/ResourcePackValidator@v1
         with:
-          resourcepack: resourcepack
+          resourcepack: assets
           config: config.json
