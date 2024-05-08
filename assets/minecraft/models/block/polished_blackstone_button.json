@@ -4,7 +4,7 @@
     "layer0": "minecraft:block/polished_blackstone"
   },
   "overrides": [
-    {"predicate": {"custom_model_data":1}, "model": "item/netherite_scrap_fragment"}
+    {"predicate": {"custom_model_data":1}, "model": "ContinentalMC:item/netherite_scrap_fragment"}
   ]
 }
 
