@@ -1,9 +1,9 @@
 { 
   "pack": {
-    "pack_format": 15,
+    "pack_format": 22,
     "supported_formats": {
             "min_inclusive": 18,
-            "max_inclusive": 22
+            "max_inclusive": 23
     },
     "description": "Official CMC Resource pack"
   }
