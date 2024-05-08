@@ -5,5 +5,17 @@
     },
     "overrides": [
 	    { "predicate": { "custom_model_data": 383595}, "model": "continentalmc:item/grapplinghook" }
-    ]
+    ],
+"display": {
+        "firstperson_righthand": {
+            "rotation": [ -90, 100, 30 ],
+            "translation": [ -2, 3, 1],
+            "scale": [ 0.68, 0.68, 0.68 ]
+        },
+        "firstperson_lefthand": {
+            "rotation": [ -90, -80, -30 ],
+            "translation": [ -2, 3, 1],
+            "scale": [ 0.68, 0.68, 0.68 ]
+        }
+    }
 }
