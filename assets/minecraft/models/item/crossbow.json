@@ -1,0 +1,9 @@
+{
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "minecraft:item/crossbow"
+	},
+	"overrides": [
+		{"predicate": {"custom_model_data": 383595}, "model": "continentalmc:item/grapplinghook"}
+	]
+}
