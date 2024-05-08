@@ -1,0 +1,6 @@
+# checkout the repository (required for this Action to work)
+- uses: actions/checkout@v4
+
+# validate JSON and YAML files
+- name: json-yaml-validate
+  uses: GrantBirki/json-yaml-validate@v2.7.1 # <--- replace with the latest version
