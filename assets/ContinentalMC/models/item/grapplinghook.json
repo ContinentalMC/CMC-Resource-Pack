@@ -1,11 +1,8 @@
 {
     "parent": "item/generated",
     "textures": {
-	    "layer0": "item/crossbow"
+	    "layer0": "continentalmc:item/grapplinghook"
     },
-    "overrides": [
-	    { "predicate": { "custom_model_data": 383595}, "model": "continentalmc:item/grapplinghook" }
-    ],
 "display": {
         "firstperson_righthand": {
             "rotation": [ -90, 100, 30 ],
