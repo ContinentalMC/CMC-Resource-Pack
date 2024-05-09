@@ -1,2 +1,8 @@
 # exclude .gitignore
-.git*           export-ignore
+.git*               export-ignore
+
+# Exclude .github folder
+.github/
+
+# Exclude .gitignore file
+!.gitignore
