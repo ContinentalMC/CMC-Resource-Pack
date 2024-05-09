@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-	    "layer0": "continentalmc:item/grapplinghook"
+	    "layer0": "continentalmc:item/netherite_scrap_fragment"
     }
 }
