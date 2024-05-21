@@ -8,13 +8,13 @@
             "predicate": {
                 "custom_model_data": 1
             },
-            "model": "continentalmc:item/menu/rright"
+            "model": "continentalmc:item/menu/RRight"
         },
         {
             "predicate": {
                 "custom_model_data": 2
             },
-            "model": "continentalmc:item/menu/rleft"
+            "model": "continentalmc:item/menu/RLeft"
         }
     ]
   }
