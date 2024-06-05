@@ -18,9 +18,9 @@ jobs:
 
             # Set a custom output file path to work with the generated ZIP file
             # without needing to download its artifact in a separate step
-            output_file_path = '/tmp/pack.zip'
+            output_file_path = '/tmp/CMC-Resource-Pack.zip'
       - name: Tag and create release
         uses: softprops/action-gh-release@v2
         with:
           tag_name: action-v${{ github.run_number }}
-          files: /tmp/pack.zip
+          files: /tmp/CMC-Resource-Pack.zip
