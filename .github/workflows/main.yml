@@ -24,4 +24,4 @@ jobs:
         with:
           tag_name: action-v${{ github.run_number }}
           files: /tmp/CMC-Resource-Pack.zip
-          token: ${{ secrets.RESOURCE_ZIPPER }}
+          token: ${{ secrets.GITHUB_TOKEN }}
