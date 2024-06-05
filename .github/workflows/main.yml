@@ -19,11 +19,13 @@ jobs:
       uses: ComunidadAylas/PackSquash-action@v4
       with:
         packsquash_version: latest # Uses the latest PackSquash release supported by the action
+        options: |
+            pack_directory = 'CMC-Resource-Pack'
 
     - name: Create ZIP file
       run: |
         COMMIT_ID=$(git rev-parse --short HEAD)
-        ZIP_NAME="RP.zip"
+        ZIP_NAME="CMC-PACK-LATEST.zip"
         echo "ZIP_NAME=${ZIP_NAME}" >> $GITHUB_ENV
         zip -r "${ZIP_NAME}" .
 
