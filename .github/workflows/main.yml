@@ -1,58 +1,26 @@
-name: Resourcepack Zipper
-
-on:
-  push:
-    branches:
-      - main  # Adjust this branch name if needed
-
+name: Optimize resource pack
+on: [push]
 jobs:
-  build:
+  packsquash:
+    name: Optimize resource pack
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-      with:
-        fetch-depth: 0 # A non-shallow repository clone is required
-
-    - name: Run PackSquash
-      uses: ComunidadAylas/PackSquash-action@v4
-      with:
-        packsquash_version: latest # Uses the latest PackSquash release supported by the action
-        options: |
+      - name: Clone repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # A non-shallow repository clone is required
+      - name: Run PackSquash
+        uses: ComunidadAylas/PackSquash-action@v4
+        with:
+          packsquash_version: latest
+          options: |
             pack_directory = 'CMC-Resource-Pack'
 
-    - name: Create ZIP file
-      run: |
-        COMMIT_ID=$(git rev-parse --short HEAD)
-        ZIP_NAME="CMC-Resource-Pack.zip"
-        echo "ZIP_NAME=${ZIP_NAME}" >> $GITHUB_ENV
-        zip -r "${ZIP_NAME}" .
-
-    - name: Upload ZIP artifact
-      uses: actions/upload-artifact@v2
-      with:
-        name: resource-pack-artifact
-        path: ${{ env.ZIP_NAME }}
-
-    - name: Create Release
-      id: create_release
-      uses: actions/create-release@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.RESOURCE_ZIPPER }}
-      with:
-        tag_name: release-${{ github.sha }}
-        release_name: Release ${{ github.sha }}
-        draft: false
-        prerelease: false
-
-    - name: Upload Release Artifact
-      id: upload-release-asset
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.RESOURCE_ZIPPER }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: ${{ github.workspace }}/${{ env.ZIP_NAME }}
-        asset_name: ${{ env.ZIP_NAME }}
-        asset_content_type: application/zip
+            # Set a custom output file path to work with the generated ZIP file
+            # without needing to download its artifact in a separate step
+            output_file_path = '/tmp/pack.zip'
+      - name: Tag and create release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: action-v${{ github.run_number }}
+          files: /tmp/pack.zip
