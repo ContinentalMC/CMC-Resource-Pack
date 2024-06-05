@@ -15,6 +15,7 @@ jobs:
           packsquash_version: latest
           options: |
             pack_directory = 'CMC-Resource-Pack'
+            token = ${{ github.token }}
 
             # Set a custom output file path to work with the generated ZIP file
             # without needing to download its artifact in a separate step
