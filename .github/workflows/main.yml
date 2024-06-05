@@ -26,7 +26,6 @@ jobs:
         ZIP_NAME="RP.zip"
         echo "ZIP_NAME=${ZIP_NAME}" >> $GITHUB_ENV
         zip -r "${ZIP_NAME}" .
-        exclusions: '*.git* /*node_modules/* .editorconfig'
 
     - name: Upload ZIP artifact
       uses: actions/upload-artifact@v2
