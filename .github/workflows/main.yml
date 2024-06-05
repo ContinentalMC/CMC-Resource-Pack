@@ -25,7 +25,7 @@ jobs:
     - name: Create ZIP file
       run: |
         COMMIT_ID=$(git rev-parse --short HEAD)
-        ZIP_NAME="CMC-PACK-LATEST.zip"
+        ZIP_NAME="CMC-Resource-Pack.zip"
         echo "ZIP_NAME=${ZIP_NAME}" >> $GITHUB_ENV
         zip -r "${ZIP_NAME}" .
 
