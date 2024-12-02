@@ -1,6 +1,3 @@
 {
-    "parent": "minecraft:block/generated",
-    "textures": {
-      "layer0": "continentalmc:block/table"
-    }
+    "parent": "continentalmc:block/table"
 }
