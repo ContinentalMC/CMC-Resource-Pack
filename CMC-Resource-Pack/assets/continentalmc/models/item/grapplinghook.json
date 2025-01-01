@@ -1,1 +1,57 @@
-{"parent":"item/generated","textures":{"layer0":"continentalmc:item/grapplinghook"},"display":{"firstperson_righthand":{"rotation":[-90,100,30],"translation":[-2,3,1],"scale":[0.68,0.68,0.68]},"firstperson_lefthand":{"rotation":[-90,-80,-30],"translation":[-2,3,1],"scale":[0.68,0.68,0.68]},"thirdperson_righthand":{"rotation":[-90,90,40],"translation":[0,1,-2],"scale":[0.68,0.68,0.68]},"thirdperson_lefthand":{"rotation":[-90,-90,-40],"translation":[0,1,-2],"scale":[0.68,0.68,0.68]}}}
+{
+    "model": {
+      "type": "range_dispatch",
+      "property": "custom_model_data",
+      "fallback": {
+        "type": "model",
+        "model": "item/crossbow_standby"
+      },
+      "entries": [
+        {
+          "threshold": 383595,
+          "model": {
+            "type": "model",
+            "model": "continentalmc:item/grapplinghook"
+          }
+        }
+      ]
+    },
+    "pulling_states": [
+      {
+        "condition": {
+          "pulling": 1
+        },
+        "model": "item/crossbow_pulling_0"
+      },
+      {
+        "condition": {
+          "pulling": 1,
+          "pull": 0.58
+        },
+        "model": "item/crossbow_pulling_1"
+      },
+      {
+        "condition": {
+          "pulling": 1,
+          "pull": 1.0
+        },
+        "model": "item/crossbow_pulling_2"
+      }
+    ],
+    "charged_states": [
+      {
+        "condition": {
+          "charged": 1
+        },
+        "model": "item/crossbow_arrow"
+      },
+      {
+        "condition": {
+          "charged": 1,
+          "firework": 1
+        },
+        "model": "item/crossbow_firework"
+      }
+    ]
+  }
+  
