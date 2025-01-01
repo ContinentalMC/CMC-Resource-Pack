@@ -1,10 +1,19 @@
 {
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "minecraft:item/fire_charge"
-  },
-  "overrides": [
-      {"predicate": {"custom_model_data":1}, "model": "continentalmc:item/grenade"}
+  "model": {
+    "type": "range_dispatch",
+    "property": "custom_model_data",
+    "fallback": {
+      "type": "model",
+      "model": "item/fire_charge"
+    },
+    "entries": [
+      {
+        "threshold": 1,
+        "model": {
+          "type": "model",
+          "model": "continentalmc:item/grenade"
+        }
+      }
     ]
-  
+  }
 }
