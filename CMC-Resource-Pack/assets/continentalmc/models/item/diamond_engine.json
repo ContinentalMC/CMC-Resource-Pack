@@ -1,6 +1,1 @@
-{
-    "parent": "item/generated",
-    "textures": {
-      "layer0": "continentalmc:item/diamond_engine"
-    }
-  }
+{"parent":"item/generated","textures":{"layer0":"continentalmc:item/diamond_engine"}}

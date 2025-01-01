@@ -1,6 +1,1 @@
-{
-    "parent": "item/generated",
-    "textures": {
-      "layer0": "continentalmc:item/charred_stone_fragment"
-    }
-  }
+{"parent":"item/generated","textures":{"layer0":"continentalmc:item/charred_stone_fragment"}}
