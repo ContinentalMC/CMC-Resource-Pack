@@ -4,7 +4,7 @@
         "property": "custom_model_data",
         "fallback": {
             "type": "model",
-            "model": "minecraft:item/iron_axe"
+            "model": "minecraft:item/iron_pickaxe"
         },
         "entries": [
             {
