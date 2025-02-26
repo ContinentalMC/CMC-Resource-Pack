@@ -11,7 +11,7 @@
                 "threshold": 1,
                 "model": {
                     "type": "model",
-                    "model": "continentalmc:item/wheel"
+                    "model": "continentalmc:item/material/wheel"
                 }
             }
         ]

@@ -11,21 +11,21 @@
                 "threshold": 1,
                 "model": {
                     "type": "model",
-                    "model": "continentalmc:item/iron_engine"
+                    "model": "continentalmc:item/material/iron_engine"
                 }
             },
             {
                 "threshold": 2,
                 "model": {
                     "type": "model",
-                    "model": "continentalmc:item/gold_engine"
+                    "model": "continentalmc:item/material/gold_engine"
                 }
             },
             {
                 "threshold": 3,
                 "model": {
                     "type": "model",
-                    "model": "continentalmc:item/diamond_engine"
+                    "model": "continentalmc:item/material/diamond_engine"
                 }
             }
         ]

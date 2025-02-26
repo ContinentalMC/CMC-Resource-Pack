@@ -11,7 +11,7 @@
                 "threshold": 1,
                 "model": {
                     "type": "model",
-                    "model": "continentalmc:item/hammer"
+                    "model": "continentalmc:item/tool/hammer"
                 }
             }
         ]

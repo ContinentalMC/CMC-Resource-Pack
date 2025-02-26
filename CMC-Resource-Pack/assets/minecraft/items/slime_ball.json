@@ -11,7 +11,7 @@
                 "threshold": 1,
                 "model": {
                     "type": "model",
-                    "model": "continentalmc:item/slime_glue"
+                    "model": "continentalmc:item/material/slime_glue"
                 }
             }
         ]

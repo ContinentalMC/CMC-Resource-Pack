@@ -11,7 +11,7 @@
           "threshold": 383595,
           "model": {
             "type": "model",
-            "model": "continentalmc:item/grapplinghook"
+            "model": "continentalmc:item/tool/grapplinghook"
           }
         }
       ]

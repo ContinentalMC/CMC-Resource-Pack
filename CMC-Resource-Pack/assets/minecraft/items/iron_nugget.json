@@ -11,14 +11,14 @@
                 "threshold": 1,
                 "model": {
                     "type": "model",
-                    "model": "continentalmc:item/netherite_scrap_fragment"
+                    "model": "continentalmc:item/material/netherite_scrap_fragment"
                 }
             },
             {
                 "threshold": 2,
                 "model": {
                     "type": "model",
-                    "model": "continentalmc:item/charred_stone_fragment"
+                    "model": "continentalmc:item/material/charred_stone_fragment"
                 }
             }
         ]

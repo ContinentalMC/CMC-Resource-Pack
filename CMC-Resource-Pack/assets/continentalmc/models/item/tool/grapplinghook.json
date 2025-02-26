@@ -1,7 +1,7 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "continentalmc:item/grapplinghook"
+        "layer0": "continentalmc:item/tool/grapplinghook"
     },
     "display": {
         "firstperson_righthand": {
