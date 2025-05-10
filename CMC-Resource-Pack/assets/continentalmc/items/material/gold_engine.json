@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "continentalmc:item/material/diamond_gold_engine"
+    "model": "continentalmc:item/material/gold_engine"
   }
 }
