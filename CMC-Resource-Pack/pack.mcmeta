@@ -3,6 +3,7 @@
     "description": "Official CMC Resource pack",
     "pack_format": 71,
     "supported_formats": [
+      71,
       61,
       57
     ]
