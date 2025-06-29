@@ -1,1 +1,6 @@
-{"parent":"minecraft:item/handheld","textures":{"layer0":"continentalmc:item/scythe/weeping_scythe"}}
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "continentalmc:item/scythe/weeping_scythe"
+  }
+}
