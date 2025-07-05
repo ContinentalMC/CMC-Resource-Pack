@@ -1,8 +1,9 @@
 {
   "pack": {
     "description": "Official CMC Resource pack",
-    "pack_format": 71,
+    "pack_format": 81,
     "supported_formats": [
+      80,
       71,
       61,
       57
